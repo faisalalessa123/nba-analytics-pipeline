@@ -1,4 +1,4 @@
-# NBA Data Warehouse
+# NBA Analytics Pipeline
 
 An end-to-end data engineering project that pulls live NBA statistics directly 
 from NBA.com, transforms and normalizes the data into a relational SQLite 
