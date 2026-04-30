@@ -104,18 +104,23 @@ league rather than being distorted by year-over-year changes in league averages.
 
 ## How to Run
 
-### Google Colab
-1. Clone or download this repository
-2. Upload `NBA_ETL.ipynb` to [Google Colab](https://colab.research.google.com)
-3. Upload the contents of the `Data/` folder using the Colab file browser
-4. Run all cells top to bottom
+### Analysis Notebook (recommended — no setup required)
+Open directly in Google Colab. No Drive, no installation, no credentials needed.
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/faisalalessa123/nba-analytics-pipeline/blob/main/NBA_Analysis.ipynb)
+
+### ETL Notebook (internal use only)
+Rebuilds the database from scratch using the NBA API and Google Drive. Requires personal Drive access — not intended for public use.
+
+1. Mount your Google Drive in Colab
+2. Update the file paths to match your Drive folder
+3. Run all cells top to bottom
 
 ### Local
-```bash
-git clone https://github.com/YOUR_USERNAME/NBA-Data-Warehouse.git
-cd NBA-Data-Warehouse
-pip install pandas numpy thefuzz python-Levenshtein
-jupyter notebook NBA_ETL.ipynb
+git clone https://github.com/faisalalessa123/nba-analytics-pipeline.git
+cd nba-analytics-pipeline
+pip install pandas numpy sqlite3 thefuzz python-Levenshtein matplotlib
+jupyter notebook NBA_Analysis.ipynbnotebook NBA_ETL.ipynb
 ```
 
 ---
