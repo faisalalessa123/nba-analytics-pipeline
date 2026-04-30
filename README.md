@@ -21,7 +21,7 @@ valuation analysis.
 
 ## Project Structure
 ```
-NBA-Data-Warehouse/
+nba-analytics-pipeline/
 ├── Data/
 │   ├── player_traditional.csv
 │   ├── player_advanced.csv
@@ -35,8 +35,9 @@ NBA-Data-Warehouse/
 │   ├── playoff_advanced.csv
 │   ├── playoff_defense.csv
 │   └── playoff_team.csv
-├── NBA_Data_Extraction.ipynb   — Data pipeline from NBA.com
-├── NBA_ETL.ipynb               — ETL, database build, and value analysis
+├── nba_warehouse.db            — SQLite database (11 tables, 3NF schema)
+├── NBA_ETL.ipynb               — ETL pipeline, database build, and value scoring
+├── NBA_Analysis.ipynb          — Analysis playground (no setup required)
 └── README.md
 ```
 
