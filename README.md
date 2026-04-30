@@ -119,7 +119,9 @@ Rebuilds the database from scratch using the NBA API and Google Drive. Requires 
 ### Local
 git clone https://github.com/faisalalessa123/nba-analytics-pipeline.git
 cd nba-analytics-pipeline
+
 pip install pandas numpy sqlite3 thefuzz python-Levenshtein matplotlib
+
 jupyter notebook NBA_Analysis.ipynbnotebook NBA_ETL.ipynb
 ```
 
